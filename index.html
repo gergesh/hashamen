@@ -23,7 +23,9 @@
                 document.title = 'hasha.men';
             } else {
                 const params = new URL(document.URL);
-                if (name.startsWith('xn--')) {
+                if (name === "tomer") {
+                    window.location.href = "https://payboxapp.page.link/LKJrH3zXRPMYowco9";
+                } else if (name.startsWith('xn--')) {
                     name = punycode.decode(name.slice(4));
                     const place = params.searchParams.get('place') || 'בטן';
                     content.dir = 'rtl';
